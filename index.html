@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma E-commerce</title>
+<!-- <!Updated upstream> -->
+    <!--Estilos Bootstrap-->
+
+
+  <!-- zona del favicon -->
+  <link rel="icon" href="./favicon.ico" type="image/x-icon"> 
+  <!-- zona script para activar icono -->
+  <script src="https://kit.fontawesome.com/fa04600604.js" crossorigin="anonymous"></script>
+  <!--Estilos Bootstrap-->
+<!-- >>>>>>> Stashed changes -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Estilos propios-->
+    <link rel="stylesheet" href="./static/css/style.css">
+    <!--Link FontAwesome-->
+    <script src="https://kit.fontawesome.com/fa04600604.js" crossorigin="anonymous"></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/fa04600604.js" crossorigin="anonymous"></script>
+    </script> crossorigin="anonymous"></script>
+    <script src="app.js" async></script>
+ 
+
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header-up">
+                <div class="left-wrapper">
+                    <div class="logo"> <a href="#"><img src="./static/img/logo.png" alt=""></a></div>
+                    <div class="input-wrapper">
+                        <input type="search" class="input-search" placeholder="Buscador">
+                        <i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
+                    </div>
+                </div>
+                <div class="right-wrapper">
+                    <button class="log-in" id="btn-Modal">Iniciar sesión</button>
+                    <a href="templates/registro.html"><button class="registered">Registrarse</button></a>
+                    <div class="cart-wrapper"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="signIn-Modal" class="modalContainer">
+                <div class="modal-content">
+                    <span class="close">x</span>
+                    <div class="half login">
+                        <h2>Inicia Sesión</h2>
+                        <form class="form" action="#" method="post">
+                            <input type="email" name="email" placeholder="Ingrese su email" required>
+                            <input type="password" name="contrasena" placeholder="Ingrese su Contraseña" required>
+                            <input type="submit" value="Inicia Sesión">
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+            <nav>
+    
+    
+                <ul>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <!-- En ayuda se encuentra el formulario de contacto -->
+                    <li><a href="/templates/ayuda.html">Ayuda</a></li>
+                </ul>
+    
+            </nav>
+        </header>
+    
+        <main>
+            <section class="banner">
+                <!--Carousel del banner automatico-->
+                <div class="banner-carousel">
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="3000">
+                                <img src="./static/img/banner_oferta1.jpg" class="d-block w-100" alt="Example1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="./static/img/banner_oferta2.jpg" class="d-block w-100" alt="Example2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="./static/img/banner_oferta3.png" class="d-block w-100" alt="Example3">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="./static/img/banner_oferta4.png" class="d-block w-100" alt="Example4">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente/span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="featured">
+                <h2>Destacados</h2>
+                <div class="featured-wrapper">
+    
+                </div>
+            </section>
+
+            <section class="contenedor">
+                <!-- contenedor de los elementos --
+                <div class="contenedor-items">
+                    <div class="item">
+                     <span class="titulo-item">Auricular Gamer. Gadnic A3000</span>
+                     <img src="audifonos-gamer-diadema-ps4-xbox-one-s-jack-35mm-pc-laptop-D_NQ_NP_602307-MLM33054809344_112019-F-968x1024.png"
+                     <span class="precio-item">$43.650</span>
+                     <button class="boton-item">Agregar al Carrito</button>
+                    </div>
+                    
+                    <div class="item">
+                      <span class="titulo-item">Microfono Gamer Pc luces</span>
+                      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_850368-MLA48196467796_112021-F.webp" alt=""  class=""img-item>
+                      <span class="precio-item">$19.000</span>
+                      <button class="boton-item">Agregar al Carrito</button>
+                    </div>
+        
+                    
+                        <div class="item">
+                          <span class="titulo-item">Combo Kit Gamer. Teclado y Mousse</span>
+                          <img src="./static/img/Auriculares Gamer .png" class="max-h-64 w-full p-8 rounded-t-lg"alt="product image"img-item>
+                          <span class="precio-item">$20.000</span>
+                          <button class="boton-item">Agregar al Carrito</button>
+                        </div>
+                </div>-->
+        
+                <div class="contenedor-items">
+                    <div class="item">
+                        <span class="titulo-item">Auricular Gamer. Gadnic A3000</span>
+                        <img src="audifonos-gamer-diadema-ps4-xbox-one-s-jack-35mm-pc-laptop-D_NQ_NP_602307-MLM33054809344_112019-F-968x1024.png" alt="" class="img-item">
+                        <span class="precio-item">$43.650</span>
+                        <button class="boton-item">Agregar al Carrito</button>
+                    </div>
+                    <div class="item">
+                        <span class="titulo-item">Microfono Gamer Pc luces</span>
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_850368-MLA48196467796_112021-F.webp" alt="" class="img-item">
+                        <span class="precio-item">$25.000</span>
+                        <button class="boton-item">Agregar al Carrito</button>
+                    </div>
+                    <div class="item">
+                        <span class="titulo-item">Combo Kit Gamer. Teclado y Mousse</span>
+                        <img src="./static/img/Auriculares Gamer .png" alt="" class="img-item">
+                        <span class="precio-item">$35.000</span>
+                        <button class="boton-item">Agregar al Carrito</button>
+                    </div>
+                </div>
+        
+                <!-- carrito de compras -->
+                
+                <div class="carrito">
+                    <div class="header-carrito">
+                        <h2>Tu carrito</h2>
+                    </div>
+        
+                    <div class="carrito-items">
+                        <div class="carrito-item">
+                            <img src=""
+                            <div class="carrito-item-detalles">
+                                <span class="carrito-item-titulo">Auricular Gamer. Gadnic A3000</span>
+                                <div class="selector-cantidad">
+                                    <i class="fa-solid fa-minus restar-cantidad"></i>
+                                    <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                                    <i class="fa-solid fa-plus sumar-cantidad"></i>
+                                </div>
+                                <span class="carrito-item-precio">$43.650</span>
+                            </div>
+                            <span class="btn-eliminar">
+                                <i class="fa-solid fa-trash"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="carrito-total">
+                    <div class="fila">
+                        <strong>Tu Total</strong>
+                        <span class="carrito-precio-total">
+                            $120.000,00
+                        </span>
+                    </div>
+                    <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i></button>
+                </div>
+            </section>
+        
+        
+    
+    
+        </main>
+    
+        <footer>
+            <div class="socialNetworks-wrapper">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="contact-wrapper">
+                <h3><a href="#">Contactános</a></h3>
+            </div>
+            <div class="workWithUs-wrapper">
+                <h3><a href="#">Trabajá con nosotros</a></h3>
+            </div>
+        </footer>
+    
+        <section class="copyright">
+            <p>E-CODE Gamer. Todos los derechos reservados. 2024</p>
+        </section>
+    </div>
+
+    
+
+    <!--Script Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/carrito.js"></script>
+</body>
+
+</html>
